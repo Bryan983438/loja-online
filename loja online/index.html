@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasa Model</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Banner */
+        .banner {
+            background-image: url('https://via.placeholder.com/1600x600'); /* Substitua pela imagem desejada */
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-image: url('https://via.placeholder.com/1600x600');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .banner h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Seção de Produtos */
+        .product-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 30px 10px;
+            gap: 30px;
+            background-color: #fff;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            font-size: 1.8rem;
+            margin: 15px 0;
+        }
+
+        .product p {
+            color: #555;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .product button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #218838;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Seção Sobre */
+        .about {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Seção Contato */
+        .contact {
+            background-color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Loja Online</h1>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="Início">Início</a>
+        <a href="Sobre nós">Sobre</a>
+        <a href="#Nossos produtos">Produtos</a>
+        <a href="#Nosso contato">Contato</a>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h2>Bem-vindo à Sasa Model!</h2>
+    </div>
+
+    <!-- Seção de Produtos -->
+    <div id="produtos" class="product-section">
+        
+        <div class="product">
+            <img src="file:///c%3A/Users/Aluno/Documents/GitHub/loja-online/img/vestidos/vestido%20xad%20branco.jpg" alt="Produto 1">
+            <h3>Vestido Xadrex Branco</h3>
+            <p>R$ 179,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product">
+            <img srcset="file:///c%3A/Users/Aluno/Documents/GitHub/loja-online/img/vestidos/vestido%20verde.jpg" alt="Produto 2">
+            <h3>Vestido pure elegance verde</h3>
+            <p>R$ 129,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product">
+            <img src="file:///c%3A/Users/Aluno/Documents/GitHub/loja-online/img/vestidos/vestido%20rosa.jpg" alt="Produto 3">
+            <h3>vestido rosa detalhado outono/inverno</h3>
+            <p>R$ 199,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product">
+            <img src="file:///c%3A/Users/Aluno/Documents/GitHub/loja-online/img/vestidos/vestido%20preto.jpg" alt="Produto 4">
+            <h3>Vestido básico preto</h3>
+            <p>R$ 99,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product">
+            <img src="file:///c%3A/Users/Aluno/Documents/GitHub/loja-online/img/vestidos/vestido%20laranja.jpg" alt="Produto 5">
+            <h3>Vestido Sálmon com bolso</h3>
+            <p>R$ 129,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product">
+            <img src="file:///c%3A/Users/Aluno/Documents/GitHub/loja-online/img/vestidos/vestido%20flror%20azul.jpg" alt="Produto 6">
+            <h3>Vestido azul florido</h3>
+            <p>R$ 159,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product">
+            <img src="file:///c%3A/Users/Aluno/Documents/GitHub/loja-online/img/vestidos/vestido%20flor%20branco.jpg" alt="Produto 7">
+            <h3>Vestido florido premium branco </h3>
+            <p>R$ 189,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product">
+            <img src="" alt="Produto 8">
+            <h3></h3>
+            <p>R$ </p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product">
+            <img src="" alt="Produto 9">
+            <h3></h3>
+            <p>R$ </p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product">
+            <img src="" alt="Produto 10">
+            <h3></h3>
+            <p>R$ </p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Seção Sobre -->
+    <div id="sobre" class="about">
+        <h2>Sobre a Loja</h2>
+        <p>Bem-vindo à nossa loja online, onde você encontra os melhores produtos com preços acessíveis. Somos uma empresa dedicada a oferecer qualidade e variedade, com um excelente atendimento ao cliente. Aproveite sua experiência de compra!</p>
+    </div>
+
+    <!-- Seção Contato -->
+    <div id="contato" class="contact">
+        <h2>Entre em Contato</h2>
+        <form class="contact-form" action="#" method="post">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Sasa Model | Todos os direitos reservados! | <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+</body>
+</html>
